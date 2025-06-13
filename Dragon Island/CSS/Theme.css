@@ -23,6 +23,72 @@ body {
     padding-left: 3%;
 }
 
-.CadastroForm {
+.CadastroFormDiv {
     padding-left: 10%;
+    width: 55vw;
+}
+
+@keyframes PostItAnim{
+    to {
+        border-radius:0 0 10vw/16vw 0;
+    }
+}
+@keyframes PostItAnimTab {
+    to {
+        top: 9vw;
+        left: 7vw;
+        transform: rotate(-10deg);
+    }
+}
+.CadastroStickerSenhaPostItF {
+    height: 16vw;
+    width: 16vw;
+    background-color: #E0DE3D;
+    border-radius:0 0 5vw/7vw 0;
+    overflow: hidden;
+}
+.CadastroStickerSenhaPostItT {
+    background-color: #4E4D15;
+    height: 10vw;
+    width: 10vw;
+    position: relative;
+    top: 12vw;
+    left: 11vw;
+    z-index: 2;
+}
+.CadastroStickerSenhaPostItF:hover {
+    animation-name: PostItAnim;
+    animation-duration: 1.3s;
+}
+.CadastroStickerSenhaPostItF:hover > .CadastroStickerSenhaPostItT {
+    animation-name: PostItAnimTab;
+    animation-duration: 1.3s;
+}
+
+.CadastroStickerSenha {
+    position: relative;
+    left: 15vw;
+    bottom: 7vw;
+    transform: rotate(-26deg);
+}
+
+.CadastroStickerSenhaText {
+    position: relative;
+    bottom: 14.3vw;
+    font-size: 166%;
+    font-family: 'Comic Sans MS';
+    left: 2.7vw;
+    line-height:2.5vw;
+    user-select: none;
+}
+
+.CadastroLabel {
+    font-size: 116%;
+    font-family: 'Comic Sans MS';
+}
+
+.CadastroTextInput {
+    padding: 4px;
+    width: 15vw;
+    resize: none;
 }
