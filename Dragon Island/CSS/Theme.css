@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Site {
+    background-color:#9FD98C;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.CadastroSite {
+    display: flex;
+    padding-top: 4%;
+}
+
+.CadastroImg {
+    width: 50%;
+    padding-left: 3%;
+}
+
+.CadastroForm {
+    padding-left: 10%;
+}
